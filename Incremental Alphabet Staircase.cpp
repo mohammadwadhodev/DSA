@@ -5,9 +5,6 @@ int main(){
     int numbeOfRows = 3;
     int row = 1;
     
-
-        
-    
     while(row <= numbeOfRows){
         int col  = 1;
         while(col <= numbeOfRows){

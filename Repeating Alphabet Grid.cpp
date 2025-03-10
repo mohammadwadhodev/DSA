@@ -12,7 +12,7 @@ int main(){
             char val = 'A' + col - 1;
             cout << val;
             col++;
-            
+               
         }
         cout << endl;
         row++;
