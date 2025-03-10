@@ -4,13 +4,15 @@ using namespace std;
 int main(){
     int numbeOfRows = 5;
     int row = 1;
+    int num = 0;
     
     while(row <= numbeOfRows){
-        cout << row; 
-        int col = 1;        
-        while(col < row){
-            cout << row + col;
+        num = row;    
+        int col = 1;
+        while(col <= row){
+            cout << num;
             col++;
+            num++;
         }
         cout << endl;
         row++;
