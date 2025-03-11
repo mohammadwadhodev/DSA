@@ -2,31 +2,31 @@
 using namespace std;
 
 int main(){
-    int numbeOfRows = 3;
+    int numbeOfRows = 4;
     int row = 1;
-    
-
-        
+    char val = 'A';
+    int num = 0;
     
     while(row <= numbeOfRows){
         int col  = 1;
-        while(col <= numbeOfRows){
-            char val = 'A' + row + col - 2;
-            cout <<  val;
+        while(col <= row){
+            num += col;
+            char val = 'D' - row + col;
+            cout << val;
             col++;
-            }
 
+            }
+            
         cout << endl;
         row++;
         
         
     }
-    
 }
 
-
-
 // output 
-// A B C
+// D
+// C D 
 // B C D
-// C D E
+// A B C D
+
