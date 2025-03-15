@@ -15,11 +15,7 @@ int main(){
         
     }
 
-    cout << binary;
+    cout << binary << endl;
     
-
-
-
-
 
 }
