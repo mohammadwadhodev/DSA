@@ -2,8 +2,8 @@
 using namespace std;
 int main(){
 
-    
-    cout << "Output : " << (0b1010 >> 2) << endl;
+
+    cout << "Output : " << (32 >> 2) << endl;
 
 
 }
