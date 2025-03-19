@@ -26,7 +26,6 @@ int main() {
         cout << "Target found on index :" << index << endl;
     }
 
- 
     return 0;
 }
 
