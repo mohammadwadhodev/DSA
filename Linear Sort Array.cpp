@@ -2,45 +2,31 @@
 
 using namespace std;
 
-void linearSort(int arr[], int n) {
-    for (int i = 0; i < n - 1; i++) {
-        int minIndex = i;
-
-        for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
-                minIndex = j;
-            }
-        }
-
+int linearSearch(int arr[], int n,int target) {
     
-        if (minIndex != i) {
-            int temp = arr[i];
-            arr[i] = arr[minIndex];
-            arr[minIndex] = temp;
+    for (int i = 0; i < n ; i++) {
+        if(arr[i] == target){
+            return i;
+            
         }
+
     }
+    return -1;
 }
 
 int main() {
+    
     int myNum[5] = {64, 25, 12, 22, 11};
-    
-    
     int n = sizeof(myNum) / sizeof(myNum[0]);
-
-    cout << "Before Sorting: ";
-    for (int i = 0; i < n; i++) {
-        cout << myNum[i] << " ";
+    int index = linearSearch(myNum, n,11);
+    
+    if(index == -1){
+        cout << "Invalid index :" << index << endl;
+    }else{
+        cout << "Target found on index :" << index << endl;
     }
-    cout << endl;
 
-    linearSort(myNum, n);
-
-    cout << "After Sorting: ";
-    for (int i = 0; i < n; i++) {
-        cout << myNum[i] << " ";
-    }
-    cout << endl;
-
+ 
     return 0;
 }
 
