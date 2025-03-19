@@ -6,28 +6,20 @@ void swaotTheMaxAndMinValue(int arr[],int length){
     int maxIndex = 0;
     int smallestIndex = 0;
 
-    int smallestValue = arr[0];
-    int maxValue = arr[0];
     
     // find the smallest value
-    for(int i = 0; i<length; i++){
-        if(arr[i] < smallestValue){
-            smallestValue = arr[i];
+    for (int i = 1; i < length; i++) {
+        if (arr[i] < arr[smallestIndex]) {
             smallestIndex = i;
         }
-    }
-
-     // find the max value
-     for(int i = 0; i<length; i++){
-        if(arr[i] > maxValue){
-            maxValue = arr[i];
+        if (arr[i] > arr[maxIndex]) {
             maxIndex = i;
         }
     }
 
-    arr[maxIndex] = smallestValue;
-    arr[smallestIndex] = maxValue;
-
+    int temp = arr[smallestIndex];
+    arr[smallestIndex] = arr[maxIndex];
+    arr[maxIndex] = temp;
 
 }
 

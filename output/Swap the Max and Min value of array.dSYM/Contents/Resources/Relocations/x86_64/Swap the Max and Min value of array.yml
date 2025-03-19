@@ -2,13 +2,13 @@
 triple:          'x86_64-apple-darwin'
 binary-path:     '/Users/apple/Desktop/DSA/output/Swap the Max and Min value of array'
 relocations:
-  - { offset: 0x26, size: 0x8, addend: 0x0, symName: __Z22swaotTheMaxAndMinValuePii, symObjAddr: 0x0, symBinAddr: 0x100000BD0, symSize: 0xF0 }
-  - { offset: 0x3A5C, size: 0x8, addend: 0x0, symName: __ZNSt3__14endlB8ne180100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_, symObjAddr: 0x1E0, symBinAddr: 0x100000DB0, symSize: 0x50 }
-  - { offset: 0x3A9C, size: 0x8, addend: 0x0, symName: __ZNSt3__19use_facetB8ne180100INS_5ctypeIcEEEERKT_RKNS_6localeE, symObjAddr: 0x2C0, symBinAddr: 0x100000E90, symSize: 0x30 }
-  - { offset: 0x4D63, size: 0x8, addend: 0x0, symName: __Z22swaotTheMaxAndMinValuePii, symObjAddr: 0x0, symBinAddr: 0x100000BD0, symSize: 0xF0 }
-  - { offset: 0x4E09, size: 0x8, addend: 0x0, symName: __Z14productOfArrayPii, symObjAddr: 0xF0, symBinAddr: 0x100000CC0, symSize: 0x10 }
-  - { offset: 0x4E3F, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x100, symBinAddr: 0x100000CD0, symSize: 0xC0 }
-  - { offset: 0x4F61, size: 0x8, addend: 0x0, symName: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsB8ne180100EPFRS3_S4_E, symObjAddr: 0x1C0, symBinAddr: 0x100000D90, symSize: 0x20 }
-  - { offset: 0x4F93, size: 0x8, addend: 0x0, symName: __ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ne180100Ec, symObjAddr: 0x230, symBinAddr: 0x100000E00, symSize: 0x90 }
-  - { offset: 0x500A, size: 0x8, addend: 0x0, symName: __ZNKSt3__15ctypeIcE5widenB8ne180100Ec, symObjAddr: 0x2F0, symBinAddr: 0x100000EC0, symSize: 0x30 }
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: __Z22swaotTheMaxAndMinValuePii, symObjAddr: 0x0, symBinAddr: 0x100000C00, symSize: 0xC0 }
+  - { offset: 0x3A5C, size: 0x8, addend: 0x0, symName: __ZNSt3__14endlB8ne180100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_, symObjAddr: 0x1B0, symBinAddr: 0x100000DB0, symSize: 0x50 }
+  - { offset: 0x3A9C, size: 0x8, addend: 0x0, symName: __ZNSt3__19use_facetB8ne180100INS_5ctypeIcEEEERKT_RKNS_6localeE, symObjAddr: 0x290, symBinAddr: 0x100000E90, symSize: 0x30 }
+  - { offset: 0x4D63, size: 0x8, addend: 0x0, symName: __Z22swaotTheMaxAndMinValuePii, symObjAddr: 0x0, symBinAddr: 0x100000C00, symSize: 0xC0 }
+  - { offset: 0x4DDF, size: 0x8, addend: 0x0, symName: __Z14productOfArrayPii, symObjAddr: 0xC0, symBinAddr: 0x100000CC0, symSize: 0x10 }
+  - { offset: 0x4E15, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xD0, symBinAddr: 0x100000CD0, symSize: 0xC0 }
+  - { offset: 0x4F39, size: 0x8, addend: 0x0, symName: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsB8ne180100EPFRS3_S4_E, symObjAddr: 0x190, symBinAddr: 0x100000D90, symSize: 0x20 }
+  - { offset: 0x4F6B, size: 0x8, addend: 0x0, symName: __ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ne180100Ec, symObjAddr: 0x200, symBinAddr: 0x100000E00, symSize: 0x90 }
+  - { offset: 0x4FE2, size: 0x8, addend: 0x0, symName: __ZNKSt3__15ctypeIcE5widenB8ne180100Ec, symObjAddr: 0x2C0, symBinAddr: 0x100000EC0, symSize: 0x30 }
 ...
