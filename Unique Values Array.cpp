@@ -16,7 +16,6 @@ void findUniques(int arr[], int length){
             }
         }
         
-        // Print if the element is unique
         if (isUnique) {
             std::cout << arr[i] << " ";
         }
