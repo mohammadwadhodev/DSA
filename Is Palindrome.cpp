@@ -19,6 +19,6 @@ bool isPalindrome(int x)
     
 
 void main(){
-    var isPal = isPalindrome(121);
+    bool isPal = isPalindrome(121);
     cout << "isPalindrome : " << isPal;
 }
