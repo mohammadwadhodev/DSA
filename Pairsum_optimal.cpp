@@ -2,13 +2,22 @@
 #include <vector>
 using namespace std;
 
-
 vector<int> pairSum(vector<int> nums ,int target){
     vector<int> ans;
+    int j =  nums.size() - 1;
+    int i = 0;
     
-    for(int i = 0; i < nums.size(); i++){
-
-        
+    while(i < nums.size()){
+        int paisum = nums[i] + nums[j];
+        if(paisum > target)
+        j--;
+        else if(paisum< target)
+        i++;
+        else{
+            ans.push_back(i);
+            ans.push_back(j);
+            return ans;
+        }
     }
 
     return ans;
