@@ -9,27 +9,30 @@ int main(){
     
     vector<int> nums = {1,2,2,1,1,1};
 
-    sort(nums.begin(),nums.end());
     
-    int freq = 1, ans = nums[0];
+    
+int freq = 0, ans = 0;
 
     for(int i = 1; i< nums.size(); i++){
-        if(nums[i] == nums[i - 1]){
-            freq++;
-        }else{
-            freq = 1;
+       
+       
+        if(freq == 0){
             ans = nums[i];
         }
-        
-        if(ans > nums.size() / 2){
-            cout << "Majority Element " << ans << endl;
-            break;
+
+        if(ans == nums[i]){
+            freq++;
+        }else{
+            freq--;
+        }
+
     }
+
+    cout << "ans Element " << ans <<  " fre "<< freq <<  " size " << nums.size() / 2 << endl;
 
 }   
 
 
-// I thinks this is not working for case 3 
 
 
 // Example 1:
@@ -52,4 +55,3 @@ int main(){
 // g++ -std=c++11 Majority_element_by_optimized_approach.cpp -o MajorityElementByOptimize
 // ./MajorityElementByOptimize
 
-}
