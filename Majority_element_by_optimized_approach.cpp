@@ -9,29 +9,24 @@ int main(){
     
     vector<int> nums = {1,2,2,1,1,1};
 
+    sort(nums.begin(),nums.end());
     
-    
-int freq = 0, ans = 0;
+    int freq = 1, ans = nums[0];
 
     for(int i = 1; i< nums.size(); i++){
-       
-       
-        if(freq == 0){
-            ans = nums[i];
-        }
-
-        if(ans == nums[i]){
+        if(nums[i] == nums[i - 1]){
             freq++;
         }else{
-            freq--;
+            freq = 1;
+            ans = nums[i];
         }
-
+        
+        if(freq > nums.size() / 2){
+            cout << "Majority Element " << ans << endl;
+            break;
     }
 
-    cout << "ans Element " << ans <<  " fre "<< freq <<  " size " << nums.size() / 2 << endl;
-
 }   
-
 
 
 
@@ -55,3 +50,4 @@ int freq = 0, ans = 0;
 // g++ -std=c++11 Majority_element_by_optimized_approach.cpp -o MajorityElementByOptimize
 // ./MajorityElementByOptimize
 
+}

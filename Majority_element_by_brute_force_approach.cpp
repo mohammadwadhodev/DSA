@@ -9,7 +9,6 @@ int main(){
     
     vector<int> nums = {1,2,2,1,1,1};
 
-
     for(int val : nums)
 {
     int freq = 0;
@@ -18,6 +17,8 @@ int main(){
             freq++;
         }
     }
+
+    
 
     if(freq > nums.size() / 2){
         cout << "Majority Element " << val << endl;
